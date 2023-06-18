@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wheather</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: #1964D6;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .firstp {
+                font-size: 35px;
+                margin-top: 0;
+            }
+
+            button {
+                display: block;
+                margin: 0 auto;
+                color: white;
+                background-color: #1964D6;
+                padding: 20px;
+                border: 1px solid;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: all 200ms ease-in-out;
+            }
+
+            button:hover {
+                background: #FEFBEF;
+                color: #1964D6;
+            }
+
+            .tomorrow {
+                background: white;
+                padding: 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .tomorrow:hover {
+                background-color: #FEFBEF;
+            }
+
+            .saturday {
+                background: white;
+                padding: 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .saturday:hover {
+                background-color: #FEFBEF;
+
+            }
+
+            .sunday {
+                background: white;
+                padding: 30px;
+
+                border-radius: 4px;
+
+                cursor: pointer;
+                max-width: 400px;
+                margin: 0 auto;
+
+            }
+
+            .sunday:hover {
+                background-color: #FEFBEF
+            }
+
+            .secondp {
+                font-size: 13px;
+            }
+
+            h2:hover {
+                rgb(239, 239, 117, 0.5);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="city-heading">🌤<br />Currently 21° in Tokyo</h1>
+        <p class="firstp">13° / <strong>23°</strong></p>
+        <div class="tomorrow">
+            <h2>🌧 Tomorrow</h2>
+            <p>10° / <strong>22°</strong></p>
+        </div>
+
+        <div class="saturday">
+            <h2>🌥 Saturday</h2>
+            <p>15° / <strong>17°</strong></p>
+        </div>
+
+        <div class="sunday">
+            <h2>☀️ Sunday</h2>
+            <p>25° / <strong>28°</strong></p>
+        </div>
+        <br />
+
+        <button>Change city</button>
+        <p class="secondp">Created by Váleri Calhau</p>
+
+        <script>
+            function changeCity() {
+                let city = prompt("What city do you live in?");
+                let temperature = prompt("What temperature is it?");
+                let heading = document.querySelector("h1");
+
+
+
+                if (temperature < 0) {
+                    heading.innerHTML = "☹️<br />Currently " + temperature + "°C in " + city;
+                } else {
+                    heading.innerHTML = "😄<br />Currently " + temperature + "°C in " + city;
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+            let changeButton = document.querySelector("button");
+            changeButton.addEventListener("click", changeCity);
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>
