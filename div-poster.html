@@ -6,68 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>divposter-responsive</title>
     </head>
+    <style>
+        body {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        .warning {
+            background-color: #fefcea;
+            background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+            background: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
+            background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefcea', endColorstr='#f1da36', GradientType=0);
+            border: 10px ridge #FFFF00;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .warning img {
+            max-width: 100%;
+            padding-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .warning p {
+            font: small-caps bold 1.2rem sans-serif;
+            text-align: center;
+        }
+    </style>
+    </head>
 
     <body>
+        <div class="warning">
+            <img src="https://images.theconversation.com/files/332691/original/file-20200505-83751-1ganvej.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+                alt="An intimidating leopard.">
+            <p>Beware of the leopard</p>
+        </div>
 
     </body>
-
-</html>
-<style>
-    body {
-        max-width: 400px;
-        margin: 0 auto;
-        background-color: black;
-    }
-
-    .warning {
-        background-color:
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
-            #fefcea;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefcea', endColorstr='#f1da36', GradientType=0);
-        /* IE6-9 */
-
-        border: 10px ridge #FFFF00;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .warning img {
-        max-width: 100%;
-        padding-bottom: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .warning p {
-        font: small-caps bold 1.2rem sans-serif;
-        text-align: center;
-    }
-</style>
-</head>
-
-<body>
-    <div class="warning">
-        <img src="https://images.theconversation.com/files/332691/original/file-20200505-83751-1ganvej.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
-            alt="An intimidating leopard.">
-        <p>Beware of the leopard</p>
-    </div>
-
-</body>
 
 </html>
